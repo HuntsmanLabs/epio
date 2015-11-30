@@ -15,6 +15,10 @@ class ConnectionsController < ApplicationController
   	redirect_to dashboard_path, notice: "Successfully disconnected "
   end
 
+  def omniauth_failure
+    redirect_to dasboard_path, notice: "Well, this is embarrassing. Sorry, you weren't connected."
+  end
+
   private
 
   def set_connection
