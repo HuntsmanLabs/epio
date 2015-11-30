@@ -1,0 +1,33 @@
+<div class="row">
+	
+	<!-- Profiles and Connections -->
+	<div class="col-md-2 text-center">
+		<%= image_tag "logo.png", class: "logo" %>
+		<hr>
+		<div class="timezone">
+		<p class="text-center">Currently scheduling in <b><%= Time.zone.name %></b> time.</p>
+		<%= link_to "Wrong Timezone?", edit_user_registration_path %>
+
+		</div>
+		<hr>
+		<div class="social">
+
+		</div>
+	</div>
+
+
+	<!-- Posts -->
+
+	<div class="col-md-5">
+		<H3 class="text-center">Queue</H3>
+		<hr> 
+	</div>
+
+	<!-- History -->
+
+	<div class="col-md-5">
+		<H3 class="text-center">History</H3>
+		<hr>
+	</div>
+
+</div>
