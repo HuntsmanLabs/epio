@@ -4,7 +4,7 @@
 	
 	<!-- Profiles and Connections -->
 	<div class="col-md-2 text-center">
-		<%= image_tag "logo.png", class: "logo" %>
+	<H3 class="text-center">Channels</H3>
 		<hr>
 		<div class="timezone">
 		<p class="text-center">Currently scheduling in <b><%= Time.zone.name %></b> time.</p>
@@ -39,7 +39,7 @@
 			<%= render @scheduled %>
 			<%= will_paginate @scheduled, :param_name => 'scheduled_page' %>
 		<% else %>
-			<p class="text-center">World changing posts posted, pictures shared and updates broadcast.<%= link_to "Add more?", new_post_path %></p>
+			<p class="text-center">World changing posts posted, pictures shared and updates broadcast. <%= link_to "Add more?", new_post_path %></p>
 			<hr> 
 		<% end %> 
 	</div>
