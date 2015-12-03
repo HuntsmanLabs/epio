@@ -55,7 +55,7 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem "font-awesome-rails"
 gem 'simple_form'
 gem 'devise'
-gem 'dotenv-rails', groups: [:development]
+gem 'dotenv-rails', groups: [:development, :production]
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'validates_timeliness', '~> 3.0'
