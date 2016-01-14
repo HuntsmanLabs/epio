@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   authenticated :user, -> user { user.admin? } do
-    mount Delayed::Web::Engine, at: '/jobs'
+  mount Delayed::Web::Engine, at: '/jobs'
+
   end
    
   get 'auth/:provider/callback', to: 'connections#create'
@@ -15,7 +16,8 @@ Rails.application.routes.draw do
   resources :posts do
     member do
       put :cancel
-    end 
+    end
+
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

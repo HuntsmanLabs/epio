@@ -54,7 +54,8 @@ end
 
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem "font-awesome-rails"
+gem 'font-awesome-sass'
+gem "therubyracer"
 gem 'simple_form'
 gem 'devise'
 gem 'omniauth-twitter'
