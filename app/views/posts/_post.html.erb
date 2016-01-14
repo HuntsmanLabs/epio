@@ -10,6 +10,5 @@ Scheduled for <%= post.scheduled_at %>
 <div class="panel-footer">
 <p><%= post.state.capitalize %></p>
 <%= link_to "Cancel", cancel_post_path(post), method: :put if post.state == "scheduled" %>
-<%= link_to "Post now?", post_path(post), method: :put if post.state == "scheduled" %>
 </div>
 </div>
