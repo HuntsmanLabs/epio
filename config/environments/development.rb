@@ -38,7 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  config.action_mailer.default_url_options = {host: 'http://everpresent.io/'}
+  config.action_mailer.default_url_options = {host: 'localhost:3000'}
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -46,7 +46,7 @@ Rails.application.configure do
     port: 587,
     enable_starttls_auto: true,
     user_name: 'huntsman@huntsmanlabs.com',
-    password: 'qiUP7UEmhDpL0G9rO7_hhQ',
+    password: 'fi4bM3jS1ECLV5Wxn3cqiA',
     authentication: 'login'
   }
 end

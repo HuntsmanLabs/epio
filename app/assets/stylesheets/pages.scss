@@ -36,7 +36,7 @@
   border: 0px;
 
 }
-.btn {
+.bton {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -57,23 +57,23 @@
   padding: 10px 16px;
 }
   
-.btn-lg {
+.bton-lg {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
-.btn-primary {
+.bton-primary {
   color: #fff;
   background-color: #FFF;
   border-color: #FFF;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.bton-primary:hover,
+.bton-primary:focus,
+.bton-primary:active,
+.bton-primary.active,
+.open .dropdown-toggle.bton-primary {
   color: #fff;
   background-color: #3276b1;
   border-color: #285e8e;
@@ -83,35 +83,38 @@
   OUTLINE BUTTONS
 ************************/
 
-.btn.outline {
+.bton.outline {
     background: none;
     padding: 12px 22px;
 }
-.btn-primary.outline {
+.bton-primary.outline {
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
 }
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+.bton-primary.outline:hover, .bton-primary.outline:focus, .bton-primary.outline:active, .bton-primary.outline.active, .open > .dropdown-toggle.bton-primary {
     color: #ADFFEB;
     border-color: #ADFFEB;
 }
-.btn-primary.outline:active, .btn-primary.outline.active {
+.bton-primary.outline:active, .bton-primary.outline.active {
     border-color: #007299;
     color: #007299;
     box-shadow: none;
 }
 
 /***********************
-  CUSTON BTN VALUES
+  CUSTON bton VALUES
 ************************/
 
-.btn {
+.bton {
     padding: 14px 24px;
     border: 0 none;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.btn:focus, .btn:active:focus, .btn.active:focus {
+.bton:focus, .bton:active:focus, .bton.active:focus {
     outline: 0 none;
+}
+a:hover {
+	text-decoration: none;
 }
