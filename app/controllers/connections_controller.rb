@@ -4,7 +4,7 @@ class ConnectionsController < ApplicationController
   def create
   	connection = current_user.connections.create_from_omniauth(auth_hash)
   	if connection.save
-  		redirect_to dashboard_path, notice: "Successfully connected "
+  		redirect_to dashboard_path, notice: "Successfully connected"
   	else
   		redirect_to dashboard_path, notice: "I'm sorry, you weren't connected this time "
   	end
@@ -12,7 +12,7 @@ class ConnectionsController < ApplicationController
 
   def destroy
   	@connection.destroy
-  	redirect_to dashboard_path, notice: "Successfully disconnected "
+  	redirect_to dashboard_path, notice: "Successfully disconnected"
   end
 
   def omniauth_failure

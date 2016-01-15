@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
 	def cancel
 		@post.update_attributes(state: "cancelled")
-		redirect_to dashboard_path, notice: "Post cancelled"
+		redirect_to dashboard_path, notice: "That one just wasn't meant to be..."
 	end
 
 	private
