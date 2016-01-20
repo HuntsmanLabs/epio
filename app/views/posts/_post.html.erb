@@ -10,5 +10,6 @@ Posted at <%= post.scheduled_at %> to
 <div class="panel-footer">
 <p><%= post.state.capitalize %></p>
 <%= link_to "Cancel", cancel_post_path(post), :class => 'queue_link', method: :put if post.state == "scheduled" %>
+<%= link_to "Post Now?", @post.to_twitter, :class => 'queue_link', method: :put if post.state == "scheduled" %>
 </div>
 </div>

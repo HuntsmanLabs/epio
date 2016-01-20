@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'instant/post_now'
+
   authenticated :user, -> user { user.admin? } do
   mount Delayed::Web::Engine, at: '/jobs'
 

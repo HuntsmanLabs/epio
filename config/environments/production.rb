@@ -81,11 +81,13 @@ Rails.application.configure do
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.mandrillapp.com',
-    port: 587,
+    address: ENV.fetch("SMTP_ADDRESS"),
+    authentication: :plain,
+    domain: ENV.fetch("SMTP_DOMAIN"),
     enable_starttls_auto: true,
-    user_name: 'huntsman@huntsmanlabs.com',
-    password: 'qiUP7UEmhDpL0G9rO7_hhQ',
-    authentication: 'login'
+    password: ENV.fetch("SMTP_PASSWORD"),
+    port: "587",
+    user_name: ENV.fetch("SMTP_USERNAME")
   }
+  config.action_mailer.default_url_options = { host: ENV["SMTP_DOMAIN"] }
 end
